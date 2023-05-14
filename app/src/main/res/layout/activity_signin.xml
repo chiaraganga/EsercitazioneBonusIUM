@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SigninActivity">
+
+    <!-- Di default la ScrollView può contiene un solo elemento: facciamo in modo che l'elemento
+    contenitore sia il Layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-186dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="Inserisci i tuoi dati:"
+                android:textColor="@color/black"
+                android:textSize="35dp" />
+
+            <!-- Non è importante la larghezza dello spazio -->
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:drawablePadding="10dp"
+                android:text="Username:"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/editUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@color/grigio"
+                android:drawableStart="@drawable/ic_baseline_person_outline_24"
+                android:drawablePadding="10dp"
+                android:hint="Inserisci il tuo nome utente"
+                android:padding="10dp"
+                android:text=""
+                android:textColorHint="@color/black"
+                android:textSize="20dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Password:"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/editPassw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@color/grigio"
+                android:drawableStart="@drawable/ic_baseline_key_24"
+                android:drawablePadding="10dp"
+                android:hint="Inserisci password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:text=""
+                android:textColorHint="@color/black"
+                android:textSize="20dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Conferma la password:"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/editNPassw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@color/grigio"
+                android:drawableStart="@drawable/ic_baseline_key_24"
+                android:drawablePadding="10dp"
+                android:hint="Conferma password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:text=""
+                android:textColorHint="@color/black"
+                android:textSize="20dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Città:"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/editCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@color/grigio"
+                android:drawableStart="@drawable/ic_baseline_location_city_24"
+                android:drawablePadding="10dp"
+                android:hint="Inserisci la tua città di provenienza"
+                android:padding="10dp"
+                android:text=""
+                android:textColorHint="@color/black"
+                android:textSize="20dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Data di nascita:"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/editDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@color/grigio"
+                android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+                android:drawablePadding="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Inserisci il tuo compleanno"
+                android:inputType="date"
+                android:padding="10dp"
+                android:text=""
+                android:textColorHint="@color/black"
+                android:textSize="20dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Immagine:"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+            <Button
+                android:id="@+id/fpick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/bluscuro"
+                android:text="Seleziona una foto"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                tools:listitem="@layout/item_main" />
+
+            <!--    <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp" />
+    -->
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:text="Si sono verificati ..."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:visibility="gone" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/signInButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/bluscuro"
+                android:text="Registrati"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="15dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/annulla"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:text="Annulla"
+                android:backgroundTint="@color/bluscuro"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Benvenuto!"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:id="@+id/welcome"  />
+
+            <!-- Non è importante la larghezza dello spazio -->
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:id="@+id/resultImage"
+                android:layout_marginTop="26dp"/>
+            <!-- tools:listitem="@layout/item_main" -->
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username:"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/resultUsername"
+                android:textSize="20dp"
+                android:background="@color/grigio"
+                android:layout_margin="4dp"
+                android:padding="10dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:drawablePadding="10dp"
+                android:text=""
+                app:drawableStartCompat="@drawable/ic_baseline_person_outline_24" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password:"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:visibility="gone"
+                android:textSize="25dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/resultPassw"
+                android:textSize="20dp"
+                android:background="@color/grigio"
+                android:layout_margin="4dp"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:drawablePadding="10dp"
+                android:text=""
+                app:drawableStartCompat="@drawable/ic_baseline_key_24" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textColor="@color/bluscuro"
+                android:linksClickable="true"
+                android:id="@+id/changePwd"
+                android:clickable="true"
+                android:text="Modifica password" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Città:"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/resultCity"
+                android:textSize="20dp"
+                android:background="@color/grigio"
+                android:layout_margin="4dp"
+                android:padding="10dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:drawablePadding="10dp"
+                android:text=""
+                app:drawableStartCompat="@drawable/ic_baseline_location_city_24" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data di nascita:"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/resultDate"
+                android:textSize="20dp"
+                android:background="@color/grigio"
+                android:layout_margin="4dp"
+                android:padding="10dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:drawablePadding="10dp"
+                android:text=""
+                app:drawableStartCompat="@drawable/ic_baseline_calendar_month_24" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="34dp" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:id="@+id/logoutButton"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:text="Logout"
+                android:backgroundTint="@color/bluscuro"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-122dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Benvenuto!"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <!-- Non è importante la larghezza dello spazio -->
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:drawableStartCompat="@drawable/coronadmin" />
+
+
+            <ImageView
+                android:id="@+id/resultImage"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center" />
+            <!-- tools:listitem="@layout/item_main" -->
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="34dp" />
+
+            <SearchView
+                android:id="@+id/simpleSearchView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Lista utenti"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+                <ListView
+                    android:id="@+id/simpleListView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/material_blue_grey_800"
+                    android:dividerHeight="1dp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="I tuoi dati:"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Username:"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/resultUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@color/grigio"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                app:drawableStartCompat="@drawable/ic_baseline_face_24" />
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Password:"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="25dp" />
+
+
+            <TextView
+                android:id="@+id/resultPassw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@color/grigio"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                app:drawableStartCompat="@drawable/ic_baseline_key_24" />
+
+
+
+            <TextView
+                android:id="@+id/changePwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:linksClickable="true"
+                android:text="Modifica password"
+                android:textAlignment="center"
+                android:textColor="@color/bluscuro"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Città:"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/resultCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@color/grigio"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                app:drawableStartCompat="@drawable/ic_baseline_location_city_24" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Data di nascita:"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/resultDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@color/grigio"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                app:drawableStartCompat="@drawable/ic_baseline_calendar_month_24" />
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="140dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/bluscuro"
+                android:text="Logout"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
