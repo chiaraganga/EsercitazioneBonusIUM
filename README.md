@@ -1,4 +1,4 @@
-Esercitazione bonus IUM Chiara Ganga.
+Esercitazione bonus IUM A.A. 2022/2023, Chiara Ganga.
 
 Questo progetto è stato realizzato e testato su:
 - MacBook Pro (Emulatore: Pixel 3 API 30, Pixel 3a API 33 x86_64)
